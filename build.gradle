@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group 'org.vianvi'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+    functionalTest {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'com.intuit.karate', name: 'karate-core', version: '1.0.1'
+    testImplementation group: 'com.intuit.karate', name: 'karate-apache', version: '0.9.6'
+    testCompile 'com.intuit.karate:karate-junit5:1.0.1'
+}
+
+test {
+   useJUnitPlatform()
+}
+
+task functionalTest(type: Test, description: 'Runs the functional', group: 'Verification') {
+    useJUnitPlatform()
+}

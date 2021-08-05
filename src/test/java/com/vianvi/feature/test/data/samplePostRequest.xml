@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<catalog>
+    <book id="bk101">
+        <author>John Doe</author>
+        <title>Developer's Guide</title>
+        <genre>Computer</genre>
+        <price>10</price>
+        <publish_date>2021-08-01</publish_date>
+        <description>testing sample</description>
+    </book>
+</catalog>
