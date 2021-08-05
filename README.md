@@ -6,7 +6,8 @@ The aim of this project is setup basic API BDD automation framework
 Run command line : Project location `./gradlew clean functionalTest` .
 
 ## Some useful reference links
-https://github.com/intuit/karate
-https://graphqlzero.almansi.me/
-https://jsonpathfinder.com/
-https://reqres.in/
+
+  * https://github.com/intuit/karate
+  * https://graphqlzero.almansi.me/
+  * https://jsonpathfinder.com/
+  * https://reqres.in/
